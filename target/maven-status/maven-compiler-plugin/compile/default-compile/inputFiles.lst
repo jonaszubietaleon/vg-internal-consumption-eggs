@@ -1,0 +1,13 @@
+/workspaces/vg-internal-consumption-eggs/src/main/java/pe/edu/vallegrande/vg_ms_casas/VgMsCasasApplication.java
+/workspaces/vg-internal-consumption-eggs/src/main/java/pe/edu/vallegrande/vg_ms_casas/config/CorsConfig.java
+/workspaces/vg-internal-consumption-eggs/src/main/java/pe/edu/vallegrande/vg_ms_casas/config/SecurityConfig.java
+/workspaces/vg-internal-consumption-eggs/src/main/java/pe/edu/vallegrande/vg_ms_casas/controller/ConsumptionController.java
+/workspaces/vg-internal-consumption-eggs/src/main/java/pe/edu/vallegrande/vg_ms_casas/controller/HomeController.java
+/workspaces/vg-internal-consumption-eggs/src/main/java/pe/edu/vallegrande/vg_ms_casas/dto/ProductDTO.java
+/workspaces/vg-internal-consumption-eggs/src/main/java/pe/edu/vallegrande/vg_ms_casas/model/Consumption.java
+/workspaces/vg-internal-consumption-eggs/src/main/java/pe/edu/vallegrande/vg_ms_casas/model/Home.java
+/workspaces/vg-internal-consumption-eggs/src/main/java/pe/edu/vallegrande/vg_ms_casas/repository/ConsumptionRepository.java
+/workspaces/vg-internal-consumption-eggs/src/main/java/pe/edu/vallegrande/vg_ms_casas/repository/HomeRepository.java
+/workspaces/vg-internal-consumption-eggs/src/main/java/pe/edu/vallegrande/vg_ms_casas/service/ConsumptionService.java
+/workspaces/vg-internal-consumption-eggs/src/main/java/pe/edu/vallegrande/vg_ms_casas/service/HomeService.java
+/workspaces/vg-internal-consumption-eggs/src/main/java/pe/edu/vallegrande/vg_ms_casas/service/ServiceTest.java
