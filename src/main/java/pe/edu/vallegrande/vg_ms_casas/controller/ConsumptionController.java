@@ -1,6 +1,7 @@
 package pe.edu.vallegrande.vg_ms_casas.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import pe.edu.vallegrande.vg_ms_casas.model.Consumption;
@@ -8,6 +9,7 @@ import pe.edu.vallegrande.vg_ms_casas.service.ConsumptionService;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -71,6 +73,14 @@ public class ConsumptionController {
     @GetMapping("/lista-inactivos")
     public Flux<Consumption> listInactive() {
         return consumptionService.findInactive();
+    }
+
+    @GetMapping("/by-date-range")
+    public Flux<Consumption> getByDateRange(
+            @RequestParam("startDate") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate startDate,
+            @RequestParam("endDate") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate endDate,
+            @RequestParam(name = "activeOnly", defaultValue = "true") boolean activeOnly) {
+        return consumptionService.findByDateRange(startDate, endDate, activeOnly);
     }
 
     private ResponseEntity<Map<String, String>> createResponse(String message) {
